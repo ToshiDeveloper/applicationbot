@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
 
 
 
-await getStarted()
+getStarted()
 async function getStarted(){
   if(await config_db.has({key:`config`}) == true) return await startBot()
   setTimeout(async()=> {
